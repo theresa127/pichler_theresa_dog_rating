@@ -16,7 +16,7 @@ timer = Clock()
 all_times = [] #all RT in a list
 pos_times = [] #all positive RT in a list
 n_pos = 0 #count for positive answers (for calc mean RT)
-trial_num = 0 #trial nry
+trial_num = 0 #trial nr
 
 current_time = str(datetime.datetime.now().timestamp()) #current time
 end_file = open(current_time + "TestResults.txt","wt", encoding="utf8") #opens new textfile with timestamp for saving data
@@ -64,7 +64,6 @@ myDlg.addField("Age:")
 myDlg.addField("Gender:", choices=["male", "female", "other"])
 myDlg.addField("Do you own a dog?", choices=["yes", "no"])
 myDlg.addText("Timestamp: " + current_time)
-#myDlg.addField('Group:', choices=["Test", "Control"])
 ok_data = myDlg.show()  #show questionnary & wait for ok or cancel
 if myDlg.OK:  #if ok - print answers in a list
     print(ok_data)
