@@ -125,3 +125,11 @@ mean_pos = sum(pos_times) / n_pos #mean positive-RT for person
 print("\nMean RT of positive associations: ", mean_pos)
 end_file.write("\nMean RT of positive associations: " + str(mean_pos))
 end_file.close() #close file
+
+
+# GL
+# pretty much all good, but some small things:
+# output could be better arranged (data type per column)
+# clearEvents() better right before flip
+# no need to redefine TextStim just to change the text
+# showing info could be a function
